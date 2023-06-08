@@ -1,0 +1,22 @@
+// tri insertion
+
+// PROCEDURE
+
+PROCEDURE insertion(var arr: ARRAY_OF INTEGER)
+VAR
+    i,j,n,current: INTEGER;
+BEGIN
+    
+    FOR i FROM 1 TO n-1  DO
+        current:= arr[i] // clee
+        j:= i-1;
+
+    WHILE (j>=0 and arr[j]> current) DO
+        
+        arr[j+1]= arr[j];
+        j:= j-1;
+    END_WHILE
+
+arr[j+1]= current 
+    END_FOR
+END
